@@ -42,5 +42,5 @@ jobs:
         echo "Module 3"
         pytest tests -x -m task3_1
         pytest tests -x -m task3_2
-        pytest tests -x -m task3_3
-        pytest tests -x -m task3_4
+        NUMBA_ENABLE_CUDASIM=1 pytest tests -x -m task3_3
+        NUMBA_ENABLE_CUDASIM=1 pytest tests -x -m task3_4
